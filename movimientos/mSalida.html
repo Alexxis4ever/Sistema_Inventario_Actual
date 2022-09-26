@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movimientos-salida</title>
+    <link rel="stylesheet" href="../css/mEntrada.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="btn-menu">
+                <label for="btn-menu">☰</label>
+                <h1>Movimientos - Salida</h1>
+
+                <main>
+                    <div class="contain1">
+                        <div class="inicio">
+                            <p id="countTotal">0</p><h3>Artículos</h3>
+                        </div>
+                        <img src="../img/articulos.jpeg" alt="" class="cantidad">
+                    </div>
+
+
+                    <div class="contain2">
+                        <div class="inicio2">
+                            <p id="contador">0</p><h3>N° de registros</h3>
+                        </div>
+                        <img src="../img/cantidad.jpeg" alt="" class="registros">
+                    </div>
+                </main>
+
+                <div id="tabla" class="containTable">
+
+                    <div class="titulos">
+                        
+                        <select name="" id="filterXPackage">
+                            <option selected disabled>Selecciona el embalaje</option>
+                            <option value="Carton">Carton</option>
+                            <option value="Metal">Metal</option>
+                            <option value="Plastico">Plastico</option>
+                            <option value="Vidrio">Vidrio</option>
+                        </select>
+        
+                    </div>
+
+                    <table id="containerList" class="containerList">
+                        <tr>
+                            <th>Encargado</th>
+                            <th>Imagen</th>
+                            <th>Producto</th>
+                            <th>Fecha</th>
+                            <th>Cantidad</th>
+                            <th>Embalaje</th>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--	--------------->
+    <input type="checkbox" id="btn-menu">
+    <div class="container-menu">
+        <div class="cont-menu">
+
+            <div class="menuImg">
+                <img src="../img/Icon.png" alt="" class="imgMenu">
+
+                <div class="menuName">
+                    <h4>Bienvenid@</h4>
+                    <p id="nameUser"></p>
+                </div>
+            </div>
+            <hr>
+
+            <nav>
+                <a href="../mercancia/mercancia.html">Mercancia</a>
+                <a href="movimientos.html">Movimientos</a>
+            </nav>
+            <label for="btn-menu">✖️</label>
+        </div>
+    </div>
+    <script type="module" src="../salida/app.js " defer></script>
+    <script type="module" src="../salida/firebase.js"></script>
+    <script type="module" src="../entrada/captura.js"></script>
+    <script type="module" src="../captura-perfil/nameUser.js"></script>
+
+</body>
+
+</html>
